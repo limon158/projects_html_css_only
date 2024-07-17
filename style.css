@@ -1,0 +1,171 @@
+:root {
+    --blank: #1e90ff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0 3%;
+    background-color: #fff;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#logo {
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+}
+#logo span{
+    font-weight: bold;
+}
+.menu-icon {
+    font-size: 30px;
+}
+
+.nav-list {
+    display: none;
+}
+
+.header-container {
+    padding: 60px 0;
+    text-align: center;
+
+}
+
+.header-container .intro {
+    font-size: 30px;
+}
+
+.header-container .about{
+    text-align: justify;
+}
+
+.header-container .intro span {
+    font-weight: bold;
+}
+
+/* section style  */
+.section {
+    padding: 10px 0;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.desc-1 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.desc {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 110px;
+    border-radius: 5px;
+    background-image: url(/portfolio_mehet_akib/images/thumb_2.jpg);
+    background-size: cover;
+}
+
+
+/* footer style  */
+
+.footer-section{
+    text-align: center;
+    margin: 40px 0;
+}
+.footer-desc{
+    margin-bottom: 20px
+}
+.social-link a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px 8px;
+    color: black;
+}
+
+
+
+/* media quary */
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 0 8%;
+    }
+
+    #logo {
+        font-size: 35px;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        padding-left: 25px
+    }
+
+    .nav-list a:hover {
+        color: rgb(231, 17, 135);
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 200px 0;
+        text-align: left;
+    }
+
+    .header-container .intro {
+        width: 50%;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .header-container .about {
+        width: 50%;
+    }
+
+    .section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 350px;
+    }
+
+    .thumbnail {
+        width: 300px;
+        height: 200px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+
+}
